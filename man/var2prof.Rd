@@ -55,10 +55,10 @@ var2prof(varlen=c(2, 2))
 # 2 variables:
 # - mood: 2 modalities
 # - weather: 3 modalities
-# 2*3*2 profiles and frequencies sampled from a Binomial distribution n = 10, p = 0.5
+# 2*3 profiles and frequencies sampled from a Binomial distribution n = 10, p = 0.5
 var <- list(
-    mood = as.ordered(c("bad", "good")),
-    weather = as.ordered(c("rainy", "cloudy", "sunny"))
+    mood = ordered(c("bad", "good"), levels = c("bad", "good")),
+    weather = ordered(c("rainy", "cloudy", "sunny"), levels = c("rainy", "cloudy", "sunny"))
 )
 var2prof(var, freq = rbinom(2*3, 10, 0.5), labtype = "progressive")
 }

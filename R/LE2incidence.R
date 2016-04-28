@@ -1,10 +1,10 @@
-lexLE2incidence <- function(lst,
+LE2incidence <- function(lst,
     varmod = lapply(as.list(varlen), function(lst) 1:lst),
     varlen = sapply(varmod, length)
 )
-    UseMethod("lexLE2incidence")
+    UseMethod("LE2incidence")
 
-lexLE2incidence.default <- function(lst,
+LE2incidence.default <- function(lst,
         varmod = lapply(as.list(varlen), function(lst) 1:lst),
         varlen = sapply(varmod, length)
     )
@@ -15,11 +15,15 @@ lexLE2incidence.default <- function(lst,
     nam <- apply(res, 1, function(r) paste(r, collapse = ""))
     res <- matrix(FALSE, m, m, dimnames = list(nam, nam))
     res[lower.tri(res, diag = TRUE)] <- TRUE
+    try({
+        ord <- order(type.convert(names(rownames(res))))
+        res <- res[ord, ord]
+    })
     class(res) <- "incidence"
     return(res)
 }
 
-lexLE2incidence.list  <- function(lst,
+LE2incidence.list  <- function(lst,
     varmod = lapply(as.list(varlen), function(x) 1:x),
     varlen = sapply(varmod, length)
-) lapply(lst, function(x) lexLE2incidence(x, varmod, varlen))
+) lapply(lst, function(x) LE2incidence(x, varmod, varlen))

@@ -17,5 +17,8 @@ getlambda <- function(...) {
             res[x[3], x[2]] <<- TRUE
     })
     class(res) <- "cover"
+    res <- cover2incidence(res)
+    if (!is.partialorder(res))
+        stop("the introduced relations do not generate a partial order")
 return(res)
 }

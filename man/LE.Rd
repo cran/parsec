@@ -1,21 +1,21 @@
-\name{lexLE}
-\alias{lexLE}
+\name{LE}
+\alias{LE}
 \title{
-Lexicographic linear extensions
+Linear extensions
 }
 \description{
-The function generates all the lexicographic linear extensions of the partial order between the variables defined by the cover matrix \code{Lambda}.
+The function generates all the linear extensions of the partial order between the variables defined by the incidence matrix \code{Lambda}.
 }
 \usage{
-lexLE(Lambda)
+LE(Lambda)
 }
 \arguments{
   \item{Lambda}{
-cover matrix related to the variables.
+incidence matrix related to the variables.
 }
 }
 \value{
-a list of vetors representing all variables orders compatible with the \code{Lambda} cover matrix.
+a list of vetors representing all variables orders compatible with the \code{Lambda} incidence matrix.
 }
 \seealso{
 \code{\link{getlambda}}
@@ -25,7 +25,7 @@ Alberto Arcagni
 }
 \examples{
 Lambda <- getlambda(A < B, A < C, D < C)
-lexLE(Lambda)
+LE(Lambda)
 }
 %# cover matrix of an antichain of the variables A, B, C and D
 %vnames <- c("A", "B", "C", "D")

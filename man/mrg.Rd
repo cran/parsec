@@ -46,22 +46,22 @@ an object of S3 class \code{incidence}.
 Alberto Arcagni
 }
 \seealso{
-\code{\link{var2prof}}, \code{\link{lexLE2incidence}}
+\code{\link{var2prof}}, \code{\link{LE2incidence}}
 }
 \examples{
 # Example with lst as list of incidence matrices
 Lambda <- getlambda(A < B, C < D)
 plot(Lambda)
-lst <- lexLE(Lambda)
+lst <- LE(Lambda)
 vl <- c(A = 2, B = 2, C = 2, D = 2)
-lstZeta <- lexLE2incidence(lst, varlen = vl)
+lstZeta <- LE2incidence(lst, varlen = vl)
 for (x in lstZeta)
     plot(x)
 mrg(lstZeta)
 
 # Example with lst as list of characters
 Lambda <- getlambda(A < B, C < D)
-lst <- lexLE(Lambda)
+lst <- LE(Lambda)
 vl <- c(A = 2, B = 2, C = 2, D = 2)
 Zeta <- mrg(lst, varlen = vl)
 plot(Zeta)

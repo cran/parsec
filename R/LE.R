@@ -1,6 +1,7 @@
-lexLE <- function(
+LE <- function(
     Lambda
 ) {
+    Lambda <- incidence2cover(Lambda)
     n <- nrow(Lambda)
     varnames <- rownames(Lambda)
     if (is.null(varnames)) {

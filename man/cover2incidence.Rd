@@ -6,7 +6,7 @@
 cover2incidence
 }
 \description{
-THe function computes the incidence matrix of a poset from the cover matrix.
+The function computes the incidence matrix of a poset from the cover matrix.
 }
 \usage{
 cover2incidence(g)

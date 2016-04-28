@@ -16,7 +16,6 @@ mrg.incidence <- function(lst, varmod = NULL, varlen = NULL)
     Zres <- lst[[1]]
     if (n > 1) for (i in 2:n)
         Zres <- intersecZ(Zres, lst[[i]])
-    
     class(Zres) <- "incidence"
     
     return(Zres)
@@ -27,13 +26,12 @@ mrg.character <- function(lst,
     varlen = sapply(varmod, length))
 {  
     n <- length(lst)
-    Zres <- tmp <- lexLE2incidence(lst[[1]], varmod)
+    Zres <- tmp <- LE2incidence(lst[[1]], varmod)
     if (n > 1) for (i in 2:n) {
-        tmp <- lexLE2incidence(lst[[i]], varmod)
+        tmp <- LE2incidence(lst[[i]], varmod)
         Zres <- intersecZ(Zres, tmp)
     }
     rm(tmp)
-    
     class(Zres) <- "incidence"
     
     return(Zres)

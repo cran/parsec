@@ -11,5 +11,6 @@ function(z, Q=1) {
     sub <- z[Q, Q]
     class(sub) <- class(z)
     Q[Q] <- maximal(sub)
+    names(Q) <- rownames(z)
     return(Q)
 }

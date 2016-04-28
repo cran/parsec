@@ -1,7 +1,7 @@
-\name{lexLE2incidence}
-\alias{lexLE2incidence}
-\alias{lexLE2incidence.default}
-\alias{lexLE2incidence.list}
+\name{LE2incidence}
+\alias{LE2incidence}
+\alias{LE2incidence.default}
+\alias{LE2incidence.list}
 
 \title{
 Convert lexicographic linear extensions into incidence matrices of profiles
@@ -10,17 +10,17 @@ Convert lexicographic linear extensions into incidence matrices of profiles
 The function generates the incidence matrices of the profiles of lexicographic linear extensions starting from the variables definition (argument \code{varmod} or \code{varlen}) and a list of complete orders between the varaibles (argiment \code{lst}).
 }
 \usage{
-lexLE2incidence(
+LE2incidence(
     lst,
     varmod = lapply(as.list(varlen), function(lst) 1:lst),
     varlen = sapply(varmod, length)
 )
-\method{lexLE2incidence}{default}(
+\method{LE2incidence}{default}(
     lst,
     varmod = lapply(as.list(varlen), function(lst) 1:lst),
     varlen = sapply(varmod, length)
 )
-\method{lexLE2incidence}{list}(
+\method{LE2incidence}{list}(
     lst,
     varmod = lapply(as.list(varlen), function(x) 1:x),
     varlen = sapply(varmod, length)
@@ -57,9 +57,9 @@ Alberto Arcagni
 \examples{
 Lambda <- getlambda(A < B, C < D)
 plot(Lambda)
-lst <- lexLE(Lambda)
+lst <- LE(Lambda)
 vl <- c(A = 2, B = 2, C = 2, D = 2)
-lstZeta <- lexLE2incidence(lst, varlen = vl)
+lstZeta <- LE2incidence(lst, varlen = vl)
 for (x in lstZeta)
     plot(x)
 }

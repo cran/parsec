@@ -29,7 +29,7 @@ pop2prof <- function(y, labtype = c("profiles", "progressive"), sep="/") {
         labels <- sprintf(paste("P%0", ceiling(log(m, 10)), "i", sep = ""), 1:m)
         rownames(profiles) <- names(freq) <- labels
     }
-    res <- list(profiles = profiles, freq = freq)
+    res <- list(profiles = as.data.frame(profiles), freq = freq)
     class(res) <- "wprof"
     return(res)
 }

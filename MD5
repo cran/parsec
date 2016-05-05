@@ -1,4 +1,4 @@
-c4b1ffb2b3d70af84ba65d4f7423825f *DESCRIPTION
+becbbeeaf912e1f71b3b99cc7e776297 *DESCRIPTION
 b59a1b9173842015f9a7a616ea2b5dd7 *NAMESPACE
 db89f6f89d04e4fe454523692ae007f3 *R/AF.R
 430b735db8e718ac03c14eca30acfcf8 *R/AF.default.R
@@ -62,7 +62,7 @@ e87c9492b0a0b21800e0559fe13d9d50 *R/obsprof.R
 2ba70efb526307a5bbbd79fdf8aab64d *R/plot.incidence.R
 28ceb7fe158e89f763af4323b89f8f27 *R/plot.parsec.R
 f5b9f37aa22f4d4892c02d96cf621d22 *R/plot.wprof.R
-68a5821a5ce8e2f365d765af6f01230c *R/pop2prof.R
+8e6247b6d1f1bef4479ce84520812422 *R/pop2prof.R
 6912dbf6fa1eaad21af5871d74a881b5 *R/popelem.R
 19b7753714cfd2a4333db9815c835f16 *R/popelem.wprof.R
 99fcc7b11bebd65b9e2c91729a867e0e *R/proFreq.R
@@ -119,7 +119,7 @@ a374b08fd52743cde9392d97d92e054e *man/linzeta.Rd
 e14ae4d16eb8823eb1ee4bebaa15fff6 *man/mrg.Rd
 dc9ef0ef43d3de3872545046b36b2c31 *man/obsprof.Rd
 377a2a834bd2e2a8a4afa29d2e4ccd88 *man/parsec-internal.Rd
-4561a5268cf91dc7d05116e0a0ba7a9d *man/parsec-package.Rd
+69719d174a54302aec8c1f8e22dd75d7 *man/parsec-package.Rd
 ebf0c6fa95958c04653e181e9da92e87 *man/plot.cover.Rd
 ad1a7ee2dfba7d06d0cf31bd9843f1b5 *man/plot.parsec.Rd
 6e8f6d16af7952d39be1911de88d349c *man/pop2prof.Rd

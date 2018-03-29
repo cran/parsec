@@ -8,7 +8,7 @@ Population to profiles
 Extract observed profiles and their frequencies out of statistical population.
 }
 \usage{
-pop2prof(y, labtype = c("profiles", "progressive"), sep = "/")
+pop2prof(y, labtype = c("profiles", "progressive"), sep = "", weights = rep(1, nrow(y)))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -20,6 +20,9 @@ the user can choose the type of labels to assign to profiles. See details.
 }
   \item{sep}{
 variables separator in the profiles labels.
+  }
+  \item{weights}{
+a vector as long as the number of observations in \code{y} representing the survey weights of each observation.
   }
 }
 \details{

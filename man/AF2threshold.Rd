@@ -28,10 +28,10 @@ an object of class \code{incidence}.
 \code{\link{AF}}
 }
 \examples{
-vl <- c(2, 3, 3, 2)
+vl <- c(2, 3, 2)
 prof <- var2prof(varlen = vl, labtype = "progressive")
 
-res <- AF(prof, z = c(1, 2, 1, 1), k = 1)
+res <- AF(prof, z = c(1, 2, 1), k = 1)
 
 thr <- AF2threshold(res, prof)
 

@@ -15,6 +15,7 @@ Different representation of the results obtained by the evaluation function.
     which = c("Hasse", "threshold", "identification", "rank", "gap"),
     ask = dev.interactive(),
     shape = c("square", "circle", "equispaced"),
+    noise = FALSE,
     ...
 )
 }
@@ -43,6 +44,9 @@ the threshold profiles.}
   \item{shape}{
   the shape of the Hasse diagram, see \code{\link{plot.cover}} for details.
   }
+  \item{noise}{
+  noise in the shape of the Hasse diagram. See \code{\link{vertices}}.
+}
   \item{\dots}{
   further arguments for the \code{\link{plot.cover}} function.
 }

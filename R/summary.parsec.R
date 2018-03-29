@@ -12,11 +12,12 @@ function(object, ...) {
     res$weights <- object$prof_w
     res$"threshold" <- object$threshold
     res$"id. function" <- object$idn_f
-    res$"average rank" <- apply(
-        object$rank_dist,
-        2,
-        function(x) sum((1:object$number_of_profiles)*x)
-    )
+    # res$"average rank" <- apply(
+    #     object$rank_dist,
+    #     2,
+    #     function(x) sum((1:object$number_of_profiles)*x)
+    # )
+	res$"average rank" <- as.vector(object$rank_dist %*% 1:object$number_of_profiles)
     res$"abs. severity" <- object$svr_abs
     res$"rel. severity" <- object$svr_rel
     res$"abs. wealth gap" <- object$wea_abs

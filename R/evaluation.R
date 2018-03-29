@@ -36,8 +36,8 @@ function(
     
     lev <- levels.incidence(zeta)[threshold]
     if (any(lev==1))
-        stop(paste("The element/s", paste(names(which(lev==1)), collapse=", "),
-            "of the threshold can define all profiles are poor"))
+        stop(paste("The elements", paste(names(which(lev==1)), collapse=", "),
+            "of the threshold define all profiles are poor. Wellness can not be evaluated. Use the function \"idn\" if you want calculate the rank distribution."))
     
     # frammenta le esecuzioni in modo tale da non passare a C numeri interi
     # pi? grandi di maxint

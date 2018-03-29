@@ -1,5 +1,5 @@
 plot.wprof <-
-function(x,  shape = c("square", "circle", "equispaced"), ...) {
+function(x,  shape = c("square", "circle", "equispaced"), noise = FALSE, ...) {
   Z <- getzeta(x)
-  plot(Z, shape, ...)
+  plot(Z, shape, noise, ...)
 }

@@ -10,9 +10,9 @@ Hasse diagram
 Function \code{plot} methods for objects of S3 classes \code{wprof}, \code{incidence}, \code{cover}, to draw Hasse diagrams.
 }
 \usage{
-\method{plot}{wprof}(x,  shape = c("square", "circle", "equispaced"), ...)
-\method{plot}{incidence}(x, shape = c("square", "circle", "equispaced"), ...)
-\method{plot}{cover}(x, shape = c("square", "circle", "equispaced"),
+\method{plot}{wprof}(x,  shape = c("square", "circle", "equispaced"), noise = FALSE, ...)
+\method{plot}{incidence}(x, shape = c("square", "circle", "equispaced"), noise = FALSE, ...)
+\method{plot}{cover}(x, shape = c("square", "circle", "equispaced"), noise = FALSE,
     pch = 21, cex = max(nchar(rownames(x))) + 2, bg = "white", ...)
 }
 %- maybe also 'usage' for other objects documented here.
@@ -22,6 +22,9 @@ an object of S3 class \code{wprof}, an object of S3 class \code{incidence} or an
 }
   \item{shape}{
 shape of the Hasse diagram. See \code{\link{vertices}}.
+},
+  \item{noise}{
+noise in the shape of the Hasse diagram. See \code{\link{vertices}}.
 }
   \item{pch}{
 graphical parameter. See \code{\link[graphics]{plot.default}}.

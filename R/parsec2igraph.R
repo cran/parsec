@@ -1,0 +1,1 @@
+parsec2igraph <- function(p, ...) UseMethod("parsec2igraph")

@@ -1,0 +1,1 @@
+rank_stability <- function(x, ...) UseMethod("rank_stability")

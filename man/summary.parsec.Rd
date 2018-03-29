@@ -15,7 +15,7 @@ returned by \code{\link{evaluation}},}
 \item{the assigned weight,}
 \item{whether or not it belongs to the threshold,}
 \item{the corresponding value of the identification function,}
-\item{the average rank,}
+\item{the average poverty rank,}
 \item{the different gap measures (see \code{\link{evaluation}} for details).}
 }
 If the number of profiles is higher than ten, the shown table gets cut, but

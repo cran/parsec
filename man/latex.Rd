@@ -30,7 +30,7 @@ the caption of the LaTeX figure.
 a vector of two elements to control the scale of the X-axis and the scale of the Y-axis in the LaTeX output.
 }
   \item{\dots}{
-any of above.  
+any of above.
 }
 }
 \examples{

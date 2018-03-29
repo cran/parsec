@@ -1,5 +1,5 @@
 vertices <-
-function(C, shape=c("square", "circle", "equispaced")) {
+function(C, shape=c("square", "circle", "equispaced"), noise = FALSE) {
   
   stopifnot(class(C)=="cover")
   
@@ -33,7 +33,7 @@ function(C, shape=c("square", "circle", "equispaced")) {
   y <- -c(y - mean(y))
   
   y <- y/max(c(y, 1))
-  x <- x/max(c(x, 1))
+  x <- (x + rnorm(n, 0, noise)/10)/max(c(abs(x), 1))
       
   # trasformzione in cerchio/rombo
   xmax <- sapply(y, function(i) max(x[which(y==i)]))

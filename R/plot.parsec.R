@@ -1,5 +1,5 @@
 plot.parsec <-
-function(x, which = c("Hasse", "threshold", "identification", "rank", "gap"), ask = dev.interactive(),  shape = c("square", "circle", "equispaced"), ...) {
+function(x, which = c("Hasse", "threshold", "identification", "rank", "gap"), ask = dev.interactive(),  shape = c("square", "circle", "equispaced"), noise = FALSE, ...) {
     
     if(!all(is.numeric("labels"), is.character("labels")))
         labels <- rownames(x$incidence)
@@ -16,6 +16,7 @@ function(x, which = c("Hasse", "threshold", "identification", "rank", "gap"), as
     plot(
         x$incidence,
         shape = shape,
+        noise = noise,
         pch = 21,
         cex = max(nchar(rownames(x$incidence)))+2,
         bg = "white",

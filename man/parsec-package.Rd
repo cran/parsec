@@ -19,8 +19,8 @@ the poset-based approach and a more classical counting procedure.
 \tabular{ll}{
 Package: \tab parsec\cr
 Type: \tab Package\cr
-Version: \tab 1.1.2\cr
-Date: \tab 2016-05-05\cr
+Version: \tab 1.2.0\cr
+Date: \tab 2018-04-01\cr
 License: \tab GPL (>= 2)\cr
 }
 }

@@ -35,9 +35,9 @@ function(
     stopifnot(is.logical(threshold))
     
     lev <- levels.incidence(zeta)[threshold]
-    if (any(lev==1))
-        stop(paste("The element/s", paste(names(which(lev==1)), collapse=", "),
-            "of the threshold can define all profiles are poor"))
+    # if (any(lev==1))
+    #     stop(paste("The element/s", paste(names(which(lev==1)), collapse=", "),
+    #         "of the threshold can define all profiles are poor"))
     
     # frammenta le esecuzioni in modo tale da non passare a C numeri interi
     # pi? grandi di maxint

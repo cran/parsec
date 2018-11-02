@@ -9,8 +9,7 @@ Multidimensional evaluation on posets
 \description{
 Given a partial order (arguments \code{profiles} and/or
 \code{zeta}) and a selected \code{threshold},
-the function returns an object of S3 class \code{parsec}.
-In particular, the function returns the identification function and
+the function returns an object of S3 class \code{parsec}, comprising the identification function and
 different severity measures, computed by uniform sampling of the linear extensions of the poset, through a C implementation of the Bubley - Dyer (1999) algorithm.
 }
 \usage{
@@ -48,11 +47,11 @@ a vector of profile names (character) or a boolean vector of length equal to the
 profiles.
 }
   \item{error}{
-the "distance"" from uniformity in the sampling distribution of linear extensions.
+the "distance" from uniformity in the sampling distribution of linear extensions.
 }
   \item{zeta}{
 the incidence matrix of the poset. An object of S3 class \code{incidence}.
-By default, extracted from \code{profiles} and the order of variable modalities.
+By default, extracted from \code{profiles}.
 }
   \item{weights}{
 weights assigned to profiles. If the argument \code{profiles} is not \code{NULL},
@@ -60,9 +59,9 @@ weights assigned to profiles. If the argument \code{profiles} is not \code{NULL}
 set equal to 1.
 }
   \item{distances}{
-matrix of distances between profiles. The matrix must be square, the dimensions
-must be equal to the number of profiles and complete. Even if the matrix is
-complete, the distance between two profiles profiles is considered only if one
+matrix of distances between pairs of profiles. The matrix must be square, with dimensions
+equal to the number of profiles. Even if the poset is
+complete, the distance between two profiles is computed only if one
 profile covers the other.
 % Observe that the user can define two different distances in case of the
 % profile A covers the profile B and in case case of the profile B covers the
@@ -73,13 +72,13 @@ the linear extension initializing the sampling algorithm. By default, it is gene
 the user through a vector of profile positions.
 }
   \item{nit}{
-Number Of Iterations in the Bubley-Dyer algorithm, by default evaluated from a formula of Karzanov and Khachiyan
+Number of ITerations in the Bubley-Dyer algorithm, by default evaluated from a formula of Karzanov and Khachiyan
 based on the number of profiles and the argument \code{error} (see Bubley and Dyer, 1999).
 }
   \item{maxint}{
 Maximum integer. By default the maximum integer obtainable in a 32bit system.
 This argument is used to group iterations and run the compiled
-C code more times, so as to avoid memory indexing problems. User can
+C code more times, so as to avoid memory indexing problems. Users can
 set a lower value to \code{maxint} in case of low RAM availability.
 }
   %\item{inequality}{
@@ -104,15 +103,14 @@ and their associated frequencies (number of statistical units in each profile).}
 \item{number_of_iterations}{number of iterations performed by the Bubley-Dyer algorithm.}
 
 \item{rank_dist}{matrix reporting by rows the relative
-frequency distribution of the poverty ranks of each profile, over the set of sampled linear extensions.}
+frequency distributions of the ranks of each profile, over the set of sampled linear extensions.}
 
-\item{thr_dist}{vector reporting the relative frequency a profile is used as threshold in the sampled linear extensions.
-This result is useful for a posteriori valuation of the poset threshold.}
+\item{thr_dist}{vector reporting the relative frequency a profile is used as threshold in the sampled linear extensions.}
 
 \item{prof_w}{vector of weights assigned to each profile.}
 
 \item{edg_w}{matrix of distances between profiles, used to evaluate the
-measures of gap.}
+gap measures.}
 
 \item{idn_f}{vector reporting the identification function, computed as the fraction of sampled linear extensions where a profile is in the downset of the threshold.}
 

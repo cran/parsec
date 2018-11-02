@@ -2,10 +2,10 @@
 \alias{AF2threshold}
 
 \title{
-Poset threshold equivalent to the AF counting approach
+Poset threshold making the poset approach equivalent to the AF counting approach
 }
 \description{
-The function computes the profile poset threshold equivalent to the AF counting approach described in
+The function computes the threshold in the profile poset, which makes the poset approach equivalent to the AF counting approach, described in
 argument \code{mpi}.
 }
 \usage{

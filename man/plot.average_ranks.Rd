@@ -2,10 +2,10 @@
 \alias{plot.average_ranks}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Method od function \code{plot} for objects of class \code{average_ranks}
+Method of function \code{plot} for objects of class \code{average_ranks}
 }
 \description{
-Starting from the output of the function \code{average_ranks}, it provides a plot that for each each element the poset shows the average rank and the rank interval.
+From the output of the function \code{average_ranks}, the function plots the average rank and the associated rank interval, for each element of the poset.
 }
 \usage{
 \method{plot}{average_ranks}(x,
@@ -21,13 +21,13 @@ Starting from the output of the function \code{average_ranks}, it provides a plo
 An object of class \code{average_ranks}.
 }
   \item{range.first}{
-A boolean attribute that indicates if the interval is plotted in background (\code{TRUE}) or in foreground (\code{FALSE}).
+A boolean attribute to specify whether the interval is plotted in background (\code{TRUE}) or in foreground (\code{FALSE}).
 }
   \item{range.col}{
 Color of the interval.
 }
   \item{range.lty}{
-The type of the lines representing the range, the values are the same of the attribute \code{lty} of the \code{\link{plot.default}} function.
+The line type to represent the range; the values are the same of the attribute \code{lty} in the \code{\link{plot.default}} function.
 }
   \item{range.lwd}{
 Width of the lines representing the range.
@@ -36,7 +36,8 @@ Width of the lines representing the range.
 Attribute of the function \code{\link{plot.default}}, here \code{"p"} by default.
 }
   \item{ylim}{
-Attribute of the function \code{\link{plot.default}}, here \code{c(max(x$sup), 1)} by default, that means that the axis of the ordinates is reversed, since rank 1 usually means that the element of the poset is "more important".
+Attribute of function \code{\link{plot.default}}, here \code{c(max(x$sup), 1)} by default (this way, the Y-axis
+is reversed, so that rank 1 corresponds to "best").
 }
   \item{xlab}{
 Attribute of the function \code{\link{plot.default}}, here \code{""} by default.
@@ -45,10 +46,10 @@ Attribute of the function \code{\link{plot.default}}, here \code{""} by default.
 Attribute of the function \code{\link{plot.default}}, here \code{"Average rank"} by default.
 }
   \item{pch}{
-Attribute of the function \code{\link{plot.default}}, here \code{c(16, 3, 3)} by default. This method uses the \code{\link{matplot}} function to plot the average ranks and their range. The first first value is referred to the point character of the average rank, the other two are referred to the point characters of the range.
+Attribute of the function \code{\link{plot.default}}, here \code{c(16, 3, 3)} by default. This method uses the \code{\link{matplot}} function to plot the average ranks and their range. The first value refers to the point character of the average rank, the other two to the point characters of the range.
 }
   \item{col}{
-Attribute of the function \code{\link{plot.default}}, here \code{""black""} by default. The average ranks and their ranges are of the same colors, but similarly to the \code{pch}, it is possible to provide a vector to differentiate their colors.
+Attribute of the function \code{\link{plot.default}}, here \code{"black"} by default. The average ranks and their ranges are of the same color, but similarly to \code{pch}, users can provide a vector of different colors.
 }
   \item{cex}{
 Attribute of the function \code{\link{plot.default}}, here \code{c(1, 1, 1)} by default.

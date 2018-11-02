@@ -5,7 +5,7 @@
 \title{
 Incomparability between profiles}
 \description{
-The function returns the set of incomparabilities of a poset.
+The function computes the set of pairwise incomparabilities between poset elements.
 }
 \usage{
 incomp(z)
@@ -17,7 +17,7 @@ an incidence matrix.
 }
 }
 \value{
-A boolean matrix whose  element ij is \code{TRUE} when profile i and j
+A boolean matrix whose  element ij is \code{TRUE} when profiles i and j
 are incomparable.
 }
 

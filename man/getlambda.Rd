@@ -2,10 +2,10 @@
 \alias{getlambda}
 
 \title{
-Object constructor for incidence matrix between the variables
+Object constructor for the incidence matrix representing a partial order on variables.
 }
 \description{
-The function creates an object of class \code{incidence} that defines the partial order between the variables.
+The function creates an object of class \code{incidence} representing a partial order on the set of variables.
 }
 \usage{
 getlambda(...)
@@ -13,11 +13,11 @@ getlambda(...)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{\dots}{
-The relations between the variables that define the structure of the poset, see details below.
+Cover relations between variable pairs.
 }
 }
 \details{
-The relations are defined for couple of variables. They are defined by the names of the two variables and the symbols \code{<} and \code{>}. For instance, if the variable A is covered by the variable B, write the relation as \code{A < B} or \code{B > A}. If a variable is not comparable with the others, write the name of the variable without comparisons.
+Cover relations between pair of ariables are defined by the names of the two variables and the symbols \code{<} and \code{>}. For instance, if variable A is covered by variable B, write the cover relation as \code{A < B} or \code{B > A}. If a variable is not comparable to the others, write the name of the variable alone.
 }
 \value{
 an object of class \code{incidence}.

@@ -5,7 +5,7 @@
 is.downset
 }
 \description{
-The function returns whether the input set of profiles \code{Q} is a downset of the poset defined by the incidence matrix \code{z}.
+The function checks whether the input set of poset elements \code{Q} is a downset of the poset represented by the incidence matrix \code{z}.
 }
 \usage{
 is.downset(z, Q = 1)

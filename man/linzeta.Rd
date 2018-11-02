@@ -13,7 +13,7 @@ linzeta(lin)
 
 \arguments{
   \item{lin}{
-a  of profile ranks.
+a vector of elements' ranks.
 }
 }
 \examples{

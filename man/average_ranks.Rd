@@ -7,7 +7,7 @@
 Average Ranks
 }
 \description{
-The function evaluates the average rank (and other details of their distributions) for each element of the poset.
+The function evaluates the average rank, and other distribution details, for each element of the poset.
 }
 \usage{
 average_ranks(x, ...)
@@ -30,9 +30,9 @@ any of above.
 }
 }
 \details{
-The function evaluates the rank distribution for each element of the poset through the function \code{\link{idn}}. Then it determines if there are any equivalent profiles through the function \code{\link{equivalences}} and it uniforms their rank distribution. Finally it provides a dataframe that for each element of the poset contains the average rank \code{avrg}, the extremes \code{inf} and \code{sup} of the rank interval, the effective coverage probability of the rank interval \code{prob}, the estimated minimum and maximum rank values (\code{min} and \code{max}), the rank \code{range}.
+The function computes the rank distribution for each element of the poset, through function \code{\link{idn}}. Next, it checks whether there are any equivalent profiles, using function \code{\link{equivalences}}, and makes their rank distribution equal. Finally it provides a dataframe comprising, for each element of the poset: the average rank \code{avrg}, the extremes \code{inf} and \code{sup} of the rank interval, the effective coverage probability of the rank interval \code{prob}, the estimated minimum and maximum rank values (\code{min} and \code{max}) and the rank \code{range}.
 
-The output is a dataframe of class of class \code{average_ranks}, that has a method of the function \code{plot}. See \code{\link{plot.average_ranks}} for details.
+The output is a dataframe of class \code{average_ranks} /for which a method of function \code{plot} is available. See \code{\link{plot.average_ranks}} for details).
 }
 \value{
 A dataframe of class \code{average_ranks} whose columns are:

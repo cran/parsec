@@ -5,7 +5,7 @@
 validate.partialorder.incidence
 }
 \description{
-The function checks whether the boolean square matrix \code{m} represents a partial order. If this is the case, the function returns the same input matrix as a S3 class object \code{incidence}. Otherwise, the unfulfilled poset theoretical properties of matrix \code{m} are returned.
+The function checks whether the boolean square matrix \code{m} represents a partial order. If yes, the function returns the same input matrix as a S3 class object \code{incidence}. Otherwise, the unfulfilled partial order properties of matrix \code{m} are returned.
 }
 \usage{
 validate.partialorder.incidence(m)

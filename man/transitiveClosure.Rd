@@ -22,7 +22,7 @@ an object of class \code{cover} or an object of class \code{incidence}.
 }
 
 \value{
-Matrix of the transitive closure of the input matrix \code{m}.
+Incidence matrix of the transitive closure of the input matrix \code{m}.
 }
 
 \seealso{

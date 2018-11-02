@@ -7,7 +7,7 @@
 latex
 }
 \description{
-The function returns the LaTeX code to create a tikz figure representing the Hasse diagram drawn from a set of profiles (\code{prof}), an incidence matrix (\code{Z}) or a cover matrix (\code{C}). The code can be copied and pasted into a \code{latex} file. The \code{tex} source requires the \code{tikz} package,
+The function returns the LaTeX code to create a tikz figure representing the Hasse diagram drawn from a set of profiles (\code{prof}), an incidence matrix (\code{Z}) or a cover matrix (\code{C}). The code can be copied and pasted into a \code{latex} file. The \code{latex} source requires the \code{tikz} package,
 }
 \usage{
 latex(y, ...)

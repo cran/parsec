@@ -7,7 +7,7 @@
 Hasse diagram
 }
 \description{
-Function \code{plot} methods for objects of S3 classes \code{wprof}, \code{incidence}, \code{cover}, to draw Hasse diagrams.
+\code{plot} methods to draw Hasse diagrams, for objects of S3 classes \code{wprof}, \code{incidence}, \code{cover}, 
 }
 \usage{
 \method{plot}{wprof}(x,  shape = c("square", "circle", "equispaced"), noise = FALSE, ...)
@@ -24,7 +24,7 @@ an object of S3 class \code{wprof}, an object of S3 class \code{incidence} or an
 shape of the Hasse diagram. See \code{\link{vertices}}.
 },
   \item{noise}{
-noise in the shape of the Hasse diagram. See \code{\link{vertices}}.
+jittering in the shape of the Hasse diagram. See \code{\link{vertices}}.
 }
   \item{pch}{
 graphical parameter. See \code{\link[graphics]{plot.default}}.

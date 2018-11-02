@@ -8,7 +8,7 @@
 Heights
 }
 \description{
-The function returns the vector of heights of the profiles in the poset.
+The function computes the vector of heights of poset elements.
 }
 \usage{
 heights(z)

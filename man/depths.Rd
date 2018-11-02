@@ -7,7 +7,7 @@
 Depths
 }
 \description{
-The function returns the vector of depths associated to profiles in the poset.
+The function computes the depths of poset elements.
 }
 \usage{
 depths(z)

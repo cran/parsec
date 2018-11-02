@@ -7,8 +7,8 @@
 OPHI counting approach
 }
 \description{
-The function implements in a single call the OPHI
-counting approach. The implementation is limited to ordinal attributes.
+The function implements the OPHI
+counting approach, in a single call. The implementation is limited to ordinal attributes.
 }
 \usage{
 AF(y, ...)
@@ -18,20 +18,20 @@ AF(y, ...)
 
 \arguments{
   \item{y}{
-matrix of profiles, it can be substituted by an object of class \code{wprof}.
+matrix of profiles, possibly substituted by an object of class \code{wprof}.
 }
   \item{z}{
 vector of attribute cutoffs.
 }
   \item{w}{
-variables weights.
+variables' weights.
 }
   \item{k}{
 overall cutoff.
 }
   \item{freq}{
-profiles frequencies, if \code{y} is an object of class \code{wprof} this
-argument can be omitted.
+profiles' frequencies; the argument can be omitted if \code{y} is an object of class \code{wprof}.
+.
 }
   \item{\dots}{
 any of the above.
@@ -39,18 +39,18 @@ any of the above.
 }
 \value{
 An object of S3 class \code{ophi} containing all the outputs related to the OPHI counting approach. The object is a \code{list}
-with the following arguments
+comprising:
 \item{y}{
 matrix of profiles,
 }
 \item{freq}{
-profile frequencies,
+profiles' frequencies,
 }
 \item{d}{
 number of variables
 }
 \item{n}{
-number of observations (sun of frequencies),
+number of observations (sum of frequencies),
 }
 \item{z}{
 vector of cutoffs,
@@ -59,10 +59,10 @@ vector of cutoffs,
 overall cutoff,
 }
 \item{rho}{
-function comparing profiles with the vector of cutoffs,
+function comparing profiles to the vector of cutoffs,
 }
 \item{rho_k}{
-function comparing profiles with the overall cutoff, by weighting
+function comparing profiles to the overall cutoff, by weighting
 variables,
 }
 \item{g0}{
@@ -73,13 +73,13 @@ profile-variable matrix reporting the output of function
 censored vector of deprivation counts,
 }
 \item{Z_k}{
-a boolean vector identifying deprived profiles, according to specified cutoffs,
+boolean vector identifying deprived profiles, according to the specified cutoffs,
 }
 \item{q}{
 number of poor statstical units in the population,
 }
 \item{H}{
-headcount ratio, i.e.  of \code{q/n}, where \code{n} is the number of statistical units in the population,
+headcount ratio, i.e. \code{q/n}, where \code{n} is the number of statistical units in the population,
 }
 \item{A}{
 average deprivation share,

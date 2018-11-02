@@ -5,7 +5,7 @@
 lingen
 }
 \description{
-The function returns a vector of ranks identifying a linear extension of the poset defined by incidence matrix \code{z}.
+The function computes a vector of ranks, defining a linear extension of the poset represented by incidence matrix \code{z}.
 }
 \usage{
 lingen(z)

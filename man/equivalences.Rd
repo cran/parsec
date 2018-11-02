@@ -4,10 +4,10 @@
 \alias{equivalences.incidence}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Equivalence classes in posets
+Equivalence classes in a poset.
 }
 \description{
-The function provides the classes of profiles that in a poset can be considered equivalent since they share the same upset and downset.
+The function computes the set of poset elements sharing the same upset and downset.
 }
 \usage{
 equivalences(x)
@@ -19,7 +19,7 @@ an object of class \code{incidence} or \code{cover}.
 }
 }
 \value{
-The function provide a vector that attributes a class of equivalence to each profile. The vector is of class \code{factor} and not of class \code{order} because, even if levels are numerd they can not be compared.
+The function computes a vector assigning an equivalence class to each profile. The vector is of class \code{factor}.
 }
 
 \author{

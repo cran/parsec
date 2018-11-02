@@ -6,13 +6,11 @@
 Levels of a poset
 }
 \description{
-The behaviour of these methods for objects of classes \code{incidence} and
-\code{cover} is different from the behaviour of function
-\code{\link{levels}} for factors. Because of the technical definition it is not possible
-to use a different name for these methods.
-
 The methods return a vector associating each profile with the corresponding
 level.
+The behaviour of these methods for objects of classes \code{incidence} and
+\code{cover} is different from the behaviour of function
+\code{\link{levels}} for factors.
 }
 \usage{
 \method{levels}{incidence}(x)

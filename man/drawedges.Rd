@@ -5,8 +5,8 @@
 drawedges
 }
 \description{
-Graphical function used by \code{\link{plot.cover}} to draw the edges of the
-Hasse diagram, from the cover matrix \code{C}.
+Graphical function called by \code{\link{plot.cover}} to draw the edges of the
+Hasse diagram representing the input cover matrix \code{C}.
 }
 \usage{
 drawedges(C, vertices, ...)

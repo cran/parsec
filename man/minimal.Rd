@@ -7,8 +7,7 @@
 Minimal elements of a poset
 }
 \description{
-The function returns a boolean vector identifying which profiles are
-minimal elements of the input poset.
+The function returns a boolean vector identifying the minimal elements of the poset.
 }
 \usage{
 minimal(z)

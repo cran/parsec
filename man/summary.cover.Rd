@@ -3,11 +3,11 @@
 \alias{summary.incidence}
 
 \title{
-Summary method for cover and incidence objects
+Summary method for cover and incidence objects.
 }
 \description{
-The function returns a summary of cover and incidence S3 objects. At the moment, the
-function returns only the number of profiles and the number of comparabilities.
+The function computes a summary of cover and incidence S3 objects. Currently, the
+function returns just the number of profiles and the number of comparabilities.
 }
 \usage{
 \method{summary}{cover}(object, ...)

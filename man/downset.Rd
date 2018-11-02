@@ -7,7 +7,7 @@
 downset
 }
 \description{
-The function returns a boolean vector indicating which poset elements are below (or equal to) at least an element of subset \code{Q}.
+The function computes a boolean vector identifying the poset elements below (or equal to) at least one element of the input subset \code{Q}.
 }
 \usage{
 downset(z, ...)
@@ -17,7 +17,7 @@ downset(z, ...)
 
 \arguments{
   \item{z}{
-a cover or an incidence matrix, of S3 classes \code{cover} or \code{incidence} respectively
+a cover, or an incidence, matrix of S3 class \code{cover} or \code{incidence} respectively
 }
   \item{Q}{
 vector of indices identifying a subset of poset profiles

@@ -2,11 +2,11 @@
 \alias{plot.parsec}
 
 \title{
-Plot outouts of PARSEC function \code{\link{evaluation}}.
+Plot the outputs of the PARSEC function \code{\link{evaluation}}.
 }
 
 \description{
-Different representation of the results obtained by the evaluation function.
+Several representations of the results provided by the evaluation function.
 }
 
 \usage{
@@ -25,27 +25,27 @@ Different representation of the results obtained by the evaluation function.
   an object of S3 class \code{parsec}, output of the \code{\link{evaluation}} function.
 }
   \item{which}{
-the names of the graphs to be plotted (all by default), the user can choose between
+the names of the graphs to be plotted (\code{all}, by default); the user can choose among
 \itemize{
 \item{\code{Hasse}, the Hasse diagram of the poset, see \code{\link{plot.cover}} for details,}
-\item{\code{threshold}, the plot relative frequencies of the times a profile is used as threshold
-in the sampled linear extensions. This result is useful for posterior valuation of the poset threshold,}
-\item{\code{rank}, representation of the rank distribution for each profile (X-axis), through bar-plots, where the heights of
-the blocks represents the relative frequencies (total height equal to one for all the profiles) and the color represents the rank:
-white rank one, black the higher rank and a gray scale for the middle ranks,}
-\item{\code{gap}, a unified representation of the point relative poverty gap (from zero downward) and of the point relative wealth gap (from zero upward).
-The horizontal lines represents the average poverty gap and the average wealth gap. The darker vertical dashed lines represent
+\item{\code{threshold}, the relative frequencies of the times a profile is used as threshold
+in the sampled linear extensions.}
+\item{\code{rank}, barplot providing the rank distribution of each profile (X-axis). The heights of
+the blocks represent relative frequencies (the sum of the heights over profiles is equal to 1) and the color represents the rank:
+white for rank one, black for the highest rank and a gray scale for intermediate ranks.}
+\item{\code{gap}, a unified representation of the relative (e.g. poverty) gap and of the relative (e.g. wealth) gap.
+The horizontal lines represent the average (e.g. poverty) gap and the average (e.g. wealth gap). The darker vertical dashed lines represent
 the threshold profiles.}
 }
 }
   \item{ask}{
-  boolean value indicating whether the system has to ask before changing the plot.
+  boolean value indicating whether the system has to ask users before changing the plot.
 }
   \item{shape}{
   the shape of the Hasse diagram, see \code{\link{plot.cover}} for details.
   }
   \item{noise}{
-  noise in the shape of the Hasse diagram. See \code{\link{vertices}}.
+  jittering in the shape of the Hasse diagram. See \code{\link{vertices}}.
 }
   \item{\dots}{
   further arguments for the \code{\link{plot.cover}} function.

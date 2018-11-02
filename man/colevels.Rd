@@ -7,7 +7,7 @@
 Colevels of a poset
 }
 \description{
-The function returns colevels associated to poset profiles.
+The function returns colevels associated to poset elements.
 }
 \usage{
 colevels(y)

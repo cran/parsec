@@ -2,7 +2,7 @@
 \alias{merge.wprof}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Merge Two Sets of Profiles
+Merge two sets of profiles.
 }
 \description{
 Method of the function \code{merge} of package \code{base} to merge two objects of class \code{wprof} generated through functions \code{var2prof} or \code{pop2prof}.
@@ -16,22 +16,22 @@ Method of the function \code{merge} of package \code{base} to merge two objects 
 objects of class \code{wprof} to be coerced to one.
 }
   \item{support}{
-boolean variables to indicate  if \code{y} is the support of \code{x}, \code{FALSE} by default.
+boolean variables specifying whether \code{y} is the support of \code{x} (\code{FALSE} by default).
 }
   \item{FUN}{
-function to be applied to the profiles frequencies, by default the frequencies are added. It is ignored if \code{support} id \code{TRUE}.
+function to be applied to the profiles' frequencies (by default, FUN = \code{sum}). It is ignored if \code{support} is \code{TRUE}.
 }
   \item{all}{
-same argument of the function \code{\link{merge}}, here set \code{TRUE} by default to get all the possible profiles. If a profile is not observed its frequency is equal to 0, but it does not mean that it is not possible to observe it.
+same argument of function \code{\link{merge}}, by default set to \code{TRUE}, to get all possible profiles. If a profile is not observed in the data, its frequency is set to 0.
 }
   \item{\dots}{
-additional arguments to be passed to the method \code{\link{merge.data.frame}} of the package \code{base}.
+additional arguments to be passed to method \code{\link{merge.data.frame}} of the package \code{base}.
 }
 }
 \details{
-Objects of class \code{wprof} are composed by a \code{data.frame} of profiles and a vector of frequencies. This method applies the method \code{\link{merge.data.frame}} to the first the profiles and applies the function \code{FUN} to the frequencies.
+Objects of class \code{wprof} are composed of a \code{data.frame} of profiles and a vector of frequencies. This method applies method \code{\link{merge.data.frame}} to the profiles and applies function \code{FUN} to the frequencies.
 
-If \code{support} is \code{TRUE} function \code{\link{merge.data.frame}} is not used and the output corresponds to the object \code{y} but its frequencies are modified. Frequencies are equal to the frequencies of the corresponding profiles in \code{x} or are equal to 0 if the corresponding profile is not contained in \code{x}.
+If \code{support} is \code{TRUE}, function \code{\link{merge.data.frame}} is not used and the output corresponds to the object \code{y}, but with its frequencies modified. These are set equal to the frequencies of the corresponding profiles in \code{x}, or to 0 for profiles not contained in \code{x}.
 }
 
 \author{

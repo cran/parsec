@@ -4,14 +4,13 @@
 \alias{parsec2igraph.incidence}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Convert a partial order to an object of the package igraph
+Converting a partial order to an object of the package \code{\link{igraph}}.
 }
 \description{
-This function is introduced in the package in order to clarify the relation of an object of class \code{cover} and the adjacency matrix of the corresponding graph describing the cover relation.
 
-Objects of class \code{cover} are boolean matrices indicating if the element of the row \emph{is covered by} the element of the corresponding column. This definition is the transpose of the adjacency matrix of a graph describing the cover relation. This characteristic is not changed in order to guarantee the compatibility of the package with the scripts created with the previous versions of the package.
+The function turns a cover matrix to an \code{\link{igraph}} object, so as to allow using the graphical power of \code{\link{igraph}} to plot Hasse diagrams. Objects of class \code{cover} are boolean matrices where element ij is equal to 1 if element i \emph{is covered by} element j. This makes the cover matrix the transpose of the adjacency matrix of a graph, describing the cover relation in \code{\link{igraph}}.
 
-Moreover, this function allows to use the package \code{\link{igraph}} to plot and analyse the partial order.
+
 }
 \usage{
 parsec2igraph(p, ...)
@@ -28,9 +27,9 @@ additional arguments of the function \code{\link{vertices}}.
 }
 }
 \value{
-The function returns an object of class \code{igraph} that represents the directed graph describing the cover relation.
+The function returns an object of class \code{igraph}, representing the directed graph defined by the cover relation.
 
-The function add to the graph a layout generated with the function \code{\link{vertices}} in order to plot the graph of the cover relation similarly to an Hasse diagram.
+The function adds to the graph a layout generated through function \code{\link{vertices}}, so as to plot the graph according to the conventions used for Hasse diagrams.
 }
 \references{
 Csardi G, Nepusz T: The igraph software package for complex network research,

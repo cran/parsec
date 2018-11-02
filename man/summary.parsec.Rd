@@ -2,20 +2,20 @@
 \alias{summary.parsec}
 
 \title{
-Summary of outputs of the evaluation function
+Summary of outputs of the evaluation function.
 }
 
 \description{
 S3 method of function \code{summary} reporting main information for an object of class \code{parsec},
 obtained from function \code{\link{evaluation}}.
-In particular, it produces a table showing, for each profile:
+In particular, the function computes a table showing, for each profile:
 \itemize{
-\item{}{the modalities of the variables identifying the profile (if they are
-returned by \code{\link{evaluation}},}
-\item{the assigned weight,}
-\item{whether or not it belongs to the threshold,}
-\item{the corresponding value of the identification function,}
-\item{the average poverty rank,}
+\item{}{the variables' grades identifying the profile (if these are
+returned by \code{\link{evaluation}}.}
+\item{the assigned weight.}
+\item{whether or not it belongs to the threshold.}
+\item{the corresponding value of the identification function.}
+\item{the average poverty rank.}
 \item{the different gap measures (see \code{\link{evaluation}} for details).}
 }
 If the number of profiles is higher than ten, the shown table gets cut, but

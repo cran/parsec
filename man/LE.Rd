@@ -4,18 +4,18 @@
 Linear extensions
 }
 \description{
-The function generates all the linear extensions of the partial order between the variables defined by the incidence matrix \code{Lambda}.
+The function generates all of the linear extensions of the partial order defined by the incidence matrix \code{Lambda}.
 }
 \usage{
 LE(Lambda)
 }
 \arguments{
   \item{Lambda}{
-incidence matrix related to the variables.
+incidence matrix.
 }
 }
 \value{
-a list of vetors representing all variables orders compatible with the \code{Lambda} incidence matrix.
+a list of vectors representing all linear orders compatible with the \code{Lambda} incidence matrix.
 }
 \seealso{
 \code{\link{getlambda}}

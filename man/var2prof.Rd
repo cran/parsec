@@ -6,7 +6,7 @@
 Variables to profiles
 }
 \description{
-The function produces the list of all of the profiles from a list of input ordinal variables. See details for how to define variables.
+The function computes the list of all of the profiles from a list of input ordinal variables. See details for how to define variables.
 }
 \usage{
 var2prof(varmod = lapply(as.list(varlen), function(x) 1:x),
@@ -16,29 +16,29 @@ var2prof(varmod = lapply(as.list(varlen), function(x) 1:x),
 
 \arguments{
   \item{varmod}{
-list of variables and their modalities. See details. 
+list of variables and their grades. See details. 
 }
   \item{varlen}{
-a vector of number of modalities of each variable. See details.
+a vector of number of grades of each variable. See details.
 }
   \item{freq}{
 profiles frequency distribution. By default, the frequencies are set equal to 1.
 }
   \item{labtype}{
-type of labels to assign to  profiles. See details.
+type of labels to assign to profiles. See details.
 }
   \item{y}{
 a matrix of observations, used to count profiles frequencies. See details.
 }
 }
 \details{
-Variables can be defined through their names and modalities, using a list as argument \code{varmod}. The names of the objects in the list are taken as variable names. The objects in the list must be ordered vectors or numeric vectors.
+Variables can be defined through their names and grades, using a list as argument \code{varmod}. The names of the objects in the list are taken as variable names. The objects in the list must be ordered vectors or numeric vectors.
 
-A faster way to define variables is through a vector with the number of modalities of each variable, as argument \code{varlen}. This way,  variables and ttheir modalities are assigned arbitrary names. In particular, modalities are identified by their ranks in variable definition.
+A faster way to define variables is through a vector with the number of grades of each variable, as argument \code{varlen}. This way,  variables and their grades are assigned arbitrary names. In particular, grades are identified by their ranks in the variable definition.
 
-The user can choose the type label to assign to profiles. \code{profiles} is the combination of modailties identifying the profiles. When the names of the modalities are too long, it is suggested to choose \code{progressive}.
+The user can choose the type of label to assign to profiles. \code{profiles} is the combination of grades identifying the profiles. When the names of the grades are too long, it is suggested to choose \code{progressive}.
 
-\code{y} is a matrix of observation on the ordinal variables (observations by rows and variables by columns). Variables must be ordered as defined in the previous parameters. The names of variable modalities must match their definition. By this parameter, the function counts the number of times a profile is observed in the population, assigning the result to the \code{freq} output parameter. This method should be used when the variables and their modalities are known, otherwise the function \code{\link{pop2prof}} is available.
+\code{y} is a matrix of observations on the ordinal variables (observations by rows and variables by columns). Variables must be ordered as defined in the previous arguments. The names of variable grades must match their definition. By this argument, the function counts the number of times a profile is observed in the population, assigning the result to the \code{freq} output. This method should be used when the variables and their grades are known, otherwise the function \code{\link{pop2prof}} is available.
 }
 \value{
 The function returns a S3 class object \code{wprof}, "weighted profiles", comprising the \code{data.frame} \code{profiles} and the vector of frequencies \code{freq}.

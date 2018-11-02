@@ -5,7 +5,7 @@
 is.partialorder
 }
 \description{
-The function checks whether the input boolean square matrix. \code{m} represents a partial order.
+The function checks whether the input boolean square matrix \code{m} represents a partial order.
 }
 \usage{
 is.partialorder(m)

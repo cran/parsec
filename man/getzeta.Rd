@@ -6,7 +6,7 @@
 Incidence matrix generation
 }
 \description{
-The function computes the incidence matrix from the set of profiles \code{y}.
+The function computes the incidence matrix from the set of input profiles \code{y}.
 The output is a boolean matrix of S3 class \code{incidence}.
 }
 \usage{

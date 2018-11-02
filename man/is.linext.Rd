@@ -5,7 +5,7 @@
 is.linext
 }
 \description{
-The function returns whether the input argument \code{order} is a linear extension of the poset represented by the incidence matrix \code{z}.
+The function checks whether the input argument \code{order} is a linear extension of the poset represented by the incidence matrix \code{z}.
 }
 \usage{
 is.linext(order, z)
@@ -13,7 +13,7 @@ is.linext(order, z)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{order}{
-ranks of the poset elements (as rows and columns of \code{z} matrix) defining a linear order
+indexes of the poset elements (as rows and columns of \code{z} matrix) specifying the candidate linear order.
 }
   \item{z}{
 incidence matrix.

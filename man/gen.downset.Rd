@@ -16,8 +16,8 @@ gen.downset(z, Q = 1)
 an incidence matrix.
 }
   \item{Q}{
-a vector (\code{boolean}, \code{numeric} indexing profiles,
-or \code{character} with profile names) identifying the input downset.
+a vector (\code{boolean}, \code{numeric} indexing elements,
+or \code{character} with elements' names) identifying the input downset.
 }
 }
 \value{

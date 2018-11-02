@@ -4,11 +4,10 @@
 \alias{maximal.incidence}
 
 \title{
-Maximal elements of a poset
+Maximal elements of a poset.
 }
 \description{
-The function returns a boolean vector identifying which profiles are
-maximal elements of the input poset.
+The function returns a boolean vector identifying the maximal elements of the poset.
 }
 \usage{
 maximal(z)

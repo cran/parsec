@@ -3,12 +3,11 @@
 \alias{obsprof.wprof}
 
 \title{
-Remove unobserved profiles
+Remove unobserved profiles.
 }
 \description{
-The function removes from the set of possible profilesa \code{prof} the unobserved profiles
-(i.e. profiles with associated frequencyies equal to zero). It returns an object of class S3 \code{wprof}
-comprising the remaining profiles and their frequencies.
+The function removes, from the set of possible profiles \code{prof} derived from the multi-indicator system, those unobserved in the input dataset (i.e. profiles with associated frequency equal to zero). It returns an object of class S3 \code{wprof}
+comprising the observed profiles and their frequencies.
 }
 \usage{
 obsprof(prof)

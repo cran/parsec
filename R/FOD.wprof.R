@@ -1,4 +1,4 @@
-FOD.wprof <- FFOD.wprof <- function(profiles, distributions = as.data.frame(profiles$freq), lambda = do.call(getlambda, as.list(names(profiles$profiles))), ...) {
+FOD.wprof <- FFOD.wprof <- function(profiles, distributions = as.data.frame(profiles$freq), lambda = do.call(getlambda, as.list(names(profiles$profiles))), alpha = NULL, ...) {
 
 	prf <- profiles$profiles
 	UNITS.FRQ <- as.data.frame(apply(distributions, 2, function(x) x/sum(x)))
@@ -53,7 +53,18 @@ FOD.wprof <- FFOD.wprof <- function(profiles, distributions = as.data.frame(prof
 	APPROX.TOT<-sum(APPROX.CELLS)/sum(FOD.MATRIX)
 	APPROX.TOT.CORR<-sum(APPROX.CELLS)/(sum(FOD.MATRIX)-nrow(FOD.MATRIX))
 	
-	alpha <- sort(unique(c(FOD.CLOSED)))
+	alpha_tmp <- sort(unique(c(FOD.CLOSED)))
+	if(is.null(alpha))
+	  alpha <- alpha_tmp
+	else
+	  alpha <- sapply(alpha, function(x) {
+	    res <- alpha_tmp - x
+	    res[res < 0] <- Inf
+	    alpha_tmp[which.min(res)]
+	})
+	rm(alpha_tmp)
+	alpha <- unique(alpha)
+	  
 	quasi.order <- lapply(alpha, function(a) FOD.CLOSED >= a)
 	names(quasi.order) <- alpha
 	

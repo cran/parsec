@@ -10,7 +10,7 @@ From the output of the function \code{average_ranks}, the function plots the ave
 \usage{
 \method{plot}{average_ranks}(x,
     range.first = TRUE, range.col = "black", range.lty = 1,
-    range.lwd = 1, type = "p", ylim = c(max(x$sup), 1),
+    range.lwd = 1, type = "p", ylim = c(nrow(x), 1),
     xlab = "", ylab = "Average rank", pch = c(16, 3, 3),
     col = "black", cex = c(1, 1, 1), ...
 )

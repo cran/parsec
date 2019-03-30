@@ -4,9 +4,10 @@ function(m)  {
     #if(!is.partialorder(m)) stop("not an incidence martix")
     if(!binary(m)) warn <- c(warn, "binary\n")
     if(!antisymmetry(m)) warn <- c(warn, "antisymmetric\n")
-    if(!reflexivity(m)) warn <- c(warn, "refelxive\n")
+    if(!reflexivity(m)) warn <- c(warn, "reflexive\n")
     if(!transitivity(m)) warn <- c(warn, "transitive\n")
     if(!is.null(warn)) stop("the matrix is not:\n", warn)
+    if (is.null(dimnames(m))) dimnames(m) <- list(1:nrow(m), 1:ncol(m))
     class(m) <- "incidence"
     return(m)
 }

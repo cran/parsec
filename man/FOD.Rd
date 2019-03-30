@@ -16,7 +16,8 @@ FFOD(profiles, ...)
     distributions = as.data.frame(profiles$freq),
     lambda = do.call(
         getlambda, as.list(names(profiles$profiles))
-    ), ...
+    ),
+    alpha = NULL, ...
 )
 }
 %- maybe also 'usage' for other objects documented here.
@@ -29,6 +30,9 @@ FFOD(profiles, ...)
 }
   \item{lambda}{
 	object of class \code{incidence} representing the partial order of the relative importance of the indicators. By default, the lambda poset is an antichain ( i.e. all the indicators are considered equi-important).
+}
+  \item{alpha}{
+  vector of values to cut the \code{mintr.delta} matrix to generate the posets in the list \code{covers}. Default is \code{NULL} posets are generated for each different value in matrix \code{mintr.delta}.  See section 'Value' below.
 }
   \item{\dots}{
 any of above.

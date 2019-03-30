@@ -13,11 +13,11 @@ function(
     distances = {n <- nrow(zeta); matrix(1, n, n) - diag(1, n)},
     linext = lingen(zeta),
     nit = floor({n <- nrow(zeta); n^5*log(n)+n^4*log(error^(-1))}),
-    maxint = 2^31-1#,
-    #inequality = FALSE
+    maxint = 2^31-1,
+    inequality = FALSE
 )
 {
-    inequality = FALSE
+    # inequality = FALSE
     n <- nrow(zeta)
     
     
@@ -107,6 +107,9 @@ function(
     # CREAZIONE DELL'OUTPUT #
     #########################
     
+    l$rankfreq <- l$rankfreq[,n:1]
+    colnames(l$rankfreq) <- 1:n
+    
     res <- list(
         profiles = profiles,
         number_of_profiles = l$n,
@@ -128,8 +131,8 @@ function(
 #         poverty_gap = weighted.mean(l$gapRP[l$gapRP>0], l$weights[l$gapRP>0]),
 #         wealth_gap = weighted.mean(l$gapRR[l$gapRR>0], l$weights[l$gapRR>0]),
         poverty_gap = weighted.mean(l$gapRP, l$weights*(l$gapRP>0)),
-        wealth_gap = weighted.mean(l$gapRR, l$weights*(l$gapRR>0))#,
-        #inequality = l$inequality
+        wealth_gap = weighted.mean(l$gapRR, l$weights*(l$gapRR>0)),
+        inequality = l$inequality
     )
     
     class(res) <- "parsec"

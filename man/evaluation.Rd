@@ -32,8 +32,8 @@ evaluation(
         n <- nrow(zeta)
         n^5 * log(n) + n^4 * log(error^(-1))
     }),
-    maxint = 2^31 - 1%,
-    %inequality = FALSE
+    maxint = 2^31 - 1,
+    inequality = FALSE
 )
 }
 
@@ -81,9 +81,9 @@ This argument is used to group iterations and run the compiled
 C code more times, so as to avoid memory indexing problems. Users can
 set a lower value to \code{maxint} in case of low RAM availability.
 }
-  %\item{inequality}{
-%boolean parameter (by default \code{FALSE}) to make the evaluation function return also a measure of inequality (which can make computations quite lengthy).
-%}
+  \item{inequality}{
+boolean parameter (by default \code{FALSE}) to make the evaluation function return also a measure of inequality (which can make computations quite lengthy).
+}
 }
 
 \value{
@@ -133,7 +133,7 @@ from the maximal element in the linear extension.}
 
 \item{wealth_gap}{Population mean of wea_rel}
 
-%\item{inequality}{when the argument \code{inequality} is \code{TRUE}, the average value of the inequality index over the linear extensions (see Fattore and Arcagni, 2013).}
+\item{inequality}{when the argument \code{inequality} is \code{TRUE}, the average value of the inequality index over the linear extensions (see Fattore and Arcagni, 2013).}
 }
 \references{
 Bubley R., Dyer M. (1999), Faster random generation of linear extensions, Discrete Math., 201, 81-88.

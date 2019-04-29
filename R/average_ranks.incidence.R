@@ -34,10 +34,10 @@ average_ranks.incidence <- function(x, level = 0.9, error = 10^(-5), ...) {
 	MAX <- sapply(rownames(RNK), function(x) n-sum(upset(ZETA, x))+1)
 	MIN <- sapply(rownames(RNK), function(x) sum(downset(ZETA, x)))
 	RNG <- MAX - MIN #Range of position in the ranking
-	LEVELS <- as.data.frame(t(apply(RNK, 1, function(x) CONF(x, level)))) #Call to CONF and computation of rank intervals comprisin probability = PROB
-	colnames(LEVELS) <- c("inf", "sup", "prob") #(INF<=Ranking position<= SUP) >= PROB
+	LEVELS <- as.data.frame(t(apply(RNK, 1, function(x) CONF(x, level))))
+	colnames(LEVELS) <- c("inf", "sup", "prob")
 	LEVELS[,1:2] <- n - LEVELS[,1:2] + 1
-	DF <- data.frame(avrg = n - AVRG + 1, LEVELS, min = n - MAX + 1, max = n - MIN + 1, range = RNG)
+	DF <- data.frame(avrg = n - AVRG + 1, LEVELS, min = n - MIN + 1, max = n - MAX + 1, range = RNG)
 	DF <- DF[order(DF$avrg),]
 	class(DF) <- c("average_ranks", class(DF))
 	return(DF)

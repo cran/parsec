@@ -1,5 +1,6 @@
 \name{evaluation}
 \alias{evaluation}
+\alias{inequality}
 \alias{C_bd}
 \alias{C_linzeta}
 
@@ -35,6 +36,7 @@ evaluation(
     maxint = 2^31 - 1,
     inequality = FALSE
 )
+inequality(profiles = NULL, zeta = getzeta(profiles), ...)
 }
 
 \arguments{
@@ -44,7 +46,7 @@ an object of S3 class \code{wprof}.
   \item{threshold}{
 a vector identifying the threshold. It can be a vector of indexes (numeric),
 a vector of profile names (character) or a boolean vector of length equal to the number of
-profiles.
+profiles. Function \code{inequality} does not require its definition since its results do not depend on it.
 }
   \item{error}{
 the "distance" from uniformity in the sampling distribution of linear extensions.
@@ -82,7 +84,10 @@ C code more times, so as to avoid memory indexing problems. Users can
 set a lower value to \code{maxint} in case of low RAM availability.
 }
   \item{inequality}{
-boolean parameter (by default \code{FALSE}) to make the evaluation function return also a measure of inequality (which can make computations quite lengthy).
+boolean parameter (by default \code{FALSE}) to make the evaluation function return also a measure of inequality (which can make computations quite lengthy). It is \code{TRUE} in function \code{inequality} and can not be modified.
+}
+  \item{\dots}{
+further optional graphical parameters. See \code{\link[graphics]{plot.default}}.
 }
 }
 
@@ -133,7 +138,7 @@ from the maximal element in the linear extension.}
 
 \item{wealth_gap}{Population mean of wea_rel}
 
-\item{inequality}{when the argument \code{inequality} is \code{TRUE}, the average value of the inequality index over the linear extensions (see Fattore and Arcagni, 2013).}
+\item{inequality}{when the argument \code{inequality} is \code{TRUE}, the average value of the inequality index over the linear extensions (see Fattore and Arcagni, 2013). Function \code{inequalty} returns only this result.}
 }
 \references{
 Bubley R., Dyer M. (1999), Faster random generation of linear extensions, Discrete Math., 201, 81-88.

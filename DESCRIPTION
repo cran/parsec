@@ -1,6 +1,6 @@
 Package: parsec
-Version: 1.2.2
-Date: 2019-02-26
+Version: 1.2.3
+Date: 2019-04-29
 Title: Partial Orders in Socio-Economics
 Authors@R: c(person("Alberto", "Arcagni", role = c("aut", "cre"), email = "alberto.arcagni@unimib.it"), person("Marco", "Fattore", role = c("aut")))
 Author: Alberto Arcagni [aut, cre],
@@ -10,7 +10,7 @@ Description: Implements tools for the analysis of partially ordered data, with a
 Depends: igraph, netrankr
 License: GPL (>= 2)
 NeedsCompilation: yes
-Packaged: 2019-03-30 16:12:28 UTC; Alberto
+Packaged: 2019-04-29 06:51:55 UTC; alber
 Repository: CRAN
-Date/Publication: 2019-03-30 16:30:11 UTC
+Date/Publication: 2019-04-29 07:10:03 UTC
 RoxygenNote: 6.1.1

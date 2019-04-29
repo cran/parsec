@@ -9,8 +9,8 @@ Mutial ranking probability matrix
 Function to evaluate Mutial Ranking Probability (MRP) matrix based on \code{netrankr} package.
 }
 \usage{
-MRP(Z, method = c("exact", "mcmc", "approx"))
-\method{MRP}{incidence}(Z, method = c("exact", "mcmc", "approx"))
+MRP(Z, method = c("exact", "mcmc", "approx"), error = 10^(-3), nit = NULL)
+\method{MRP}{incidence}(Z, method = c("exact", "mcmc", "approx"), error = 10^(-3), nit = NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -20,7 +20,14 @@ an incidence matrix, an object of class \code{incidence}.
   \item{method}{
 a string to choose the method applied to evaluate the MRP matrix. The default value is \code{"exact"}. See section 'Details' below.
 }
+  \item{error}{
+considered only if \code{mcmc} method is selected. The "distance" from uniformity in the sampling distribution of linear extensions.
 }
+  \item{nit}{
+considered only if \code{mcmc} method is selected. Number of ITerations in the Bubley-Dyer algorithm, by default evaluated indicated in Bubley and Dyer (1999) depending on the value of \code{error}.
+}
+}
+
 \details{
 Package \code{netrankr} provides three functions to evaluate MRP matrix. Note that MRP matrix definition in \code{netrankr} is a little different from the one used in Fattore and Arcagni (2018), therefore this function unifies the results to the second definition.
 

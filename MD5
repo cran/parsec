@@ -1,4 +1,4 @@
-67c12aea5f39363a45370b04180360f8 *DESCRIPTION
+258a75f04e626b9821241f3f0ec4ba65 *DESCRIPTION
 ae93645e59da8f90cc38b454e3afcffe *NAMESPACE
 db89f6f89d04e4fe454523692ae007f3 *R/AF.R
 430b735db8e718ac03c14eca30acfcf8 *R/AF.default.R
@@ -8,11 +8,12 @@ c37abf7274741c228287411b65db95d1 *R/AF.wprof.R
 84d630f59082fd02deb3dade492b905a *R/FOD.wprof.R
 e93ec4a51f796804a03e5925d1ffe4ee *R/LE.R
 643d31e7028ce4cc08a9f5cf72e153ae *R/LE2incidence.R
-93581b488c6c45c8ca3591ecff9d414a *R/MRP.R
+09a4d518cb6a623b1b5066e19b0b1e2a *R/MRP.R
+507eae6ef53db51f6deb25b8249ec309 *R/MRPlex.R
 2c12d0057a6bddebc7d3baff493fcb2e *R/antisymmetry.R
 b38d982643b3104c6768a505aacabceb *R/average_ranks.R
 1a371b5a40c5c2ef11b74548883a2ea8 *R/average_ranks.cover.R
-d5ba174604b78add4fe07627ca74da58 *R/average_ranks.incidence.R
+e460fd7948685c2011ce30362d8d9b54 *R/average_ranks.incidence.R
 3d4cbb89432d34a8546ae1b67e7b459d *R/binary.R
 01cfd49bd6e08a4fc78602ac2ba1048a *R/colevels.R
 5908ff5e4c750eca6c182dcc0ac8a5f1 *R/colevels.cover.R
@@ -29,7 +30,7 @@ baac46bd7570fe02f48fefbc2340ab2b *R/drawedges.R
 63c2412de9d9eaf7e47fc4878a766a11 *R/equivalences.R
 4fdc7861e330170c79c9eef3470d285c *R/equivalences.cover.R
 9597ed00f0fdc141849c7f8a9b86045c *R/equivalences.incidence.R
-45f0c38ed455881feae5148ceb5a55cf *R/evaluation.R
+e0faddf5756675d315d539ff99faacbf *R/evaluation.R
 9454aea592d8739dfaa1a9b66376a605 *R/gen.downset.R
 0957aef85444cee430c71fcccf1bf827 *R/gen.upset.R
 a19edcaac490769a7ca81b131be33e67 *R/getlambda.R
@@ -77,7 +78,7 @@ a6f1e30e9e56d06bc00e60ef65adc7ef *R/plot.cover.R
 eae0545dfe6a5b1d0181e80ae7cbcb28 *R/plot.parsec.R
 dbf171f75c5f008f18a3ea7f22ecbdd9 *R/plot.rank_stability.R
 3655af5fad165975d9f99a97be25bd46 *R/plot.wprof.R
-e6fe31670a0bcc1e554d47cff4299892 *R/pop2prof.R
+0cc391c540bf74ee91f8199b3dd5f62f *R/pop2prof.R
 6912dbf6fa1eaad21af5871d74a881b5 *R/popelem.R
 19b7753714cfd2a4333db9815c835f16 *R/popelem.wprof.R
 99fcc7b11bebd65b9e2c91729a867e0e *R/proFreq.R
@@ -107,7 +108,8 @@ ba44c32010e34127ec64e3a119271850 *man/AF2threshold.Rd
 0406427c2c9d9f515a2967c47c4c44d1 *man/FOD.Rd
 3bf8e73f4528ba3b07fad237dd1b460b *man/LE.Rd
 554d19c2a85ef0975679753ffab15475 *man/LE2incidence.Rd
-092e6c7889175b6ff730677fd692b5c3 *man/MRP.Rd
+e3740071ecc99bfb98224a568dbcc675 *man/MRP.Rd
+201a765353ca7750f1f70ce5d8ea2fb0 *man/MRPlex.Rd
 e95f644f042a123d943f13b3f616f655 *man/antisymmetry.Rd
 5ad63b34e3909ff740edcf2197fa6986 *man/average_ranks.Rd
 e9da7f48bf814f67317b7e7a90353170 *man/binary.Rd
@@ -117,7 +119,7 @@ eeeb828fee2d25daa8710de71ef48057 *man/cover2incidence.Rd
 326574845a6afef5c41d364497182550 *man/downset.Rd
 462c64d555e59351b89df42731e069a3 *man/drawedges.Rd
 af8c44085d4b3089f388f974772c9d5d *man/equivalences.Rd
-d32cf34a1ca6973efdbb25dd1fb8b9cf *man/evaluation.Rd
+3ad3f9c0dd574da52346dfe7a5923073 *man/evaluation.Rd
 d0d4f52c366d295da6c54a2cfc44ac37 *man/gen.downset.Rd
 e95be3425e18010fcf15c1810a735e08 *man/gen.upset.Rd
 9bdef01919521183ca73cd450dbd0a5d *man/getlambda.Rd
@@ -147,7 +149,7 @@ b0b16634bd80bd51d46c3f773cad47a5 *man/parsec-package.Rd
 3ebfac841996b95ad3f96017ebc91382 *man/plot.cover.Rd
 27e7b6e14d3100571298507e29527c6e *man/plot.parsec.Rd
 fa2a29269af01790ca67953ce33fa62b *man/plot.rank_stability.Rd
-8c97d1deba2bf5256c6f57b0c00ad5d3 *man/pop2prof.Rd
+3ba9a94c94ab659da939645d18519b42 *man/pop2prof.Rd
 c92ab31e7f5666c79f561865784cef30 *man/popelem.Rd
 a5437f5e1b5dd69c0d7176783cc4037e *man/proFreq.Rd
 3fd77a578b623d6c6e67eb15e84fedaa *man/rank_stability.Rd

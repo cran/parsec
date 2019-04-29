@@ -1,7 +1,7 @@
 evaluation <-
 function(
     profiles = NULL,
-    threshold, # non puo' assolutamente mancare perche' su di essa si basa tutta la metodologia
+    threshold,
     error = 10^(-3),
     zeta = getzeta(profiles),
     weights = {
@@ -17,7 +17,6 @@ function(
     inequality = FALSE
 )
 {
-    # inequality = FALSE
     n <- nrow(zeta)
     
     
@@ -138,4 +137,11 @@ function(
     class(res) <- "parsec"
     
     return(res)
+}
+
+inequality <- function (profiles = NULL, zeta = getzeta(profiles), ...) 
+{
+  threshold <- rownames(zeta)[1]
+  inequality <- TRUE
+  evaluation(threshold = threshold, zeta = zeta, inequality = inequality, ...)$inequality
 }

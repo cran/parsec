@@ -8,7 +8,12 @@ Population to profiles
 Extract the observed profiles and the corresponding frequencies, out of the statistical population.
 }
 \usage{
-pop2prof(y, labtype = c("profiles", "progressive"), sep = "", weights = rep(1, nrow(y)))
+pop2prof(
+  y,
+  labtype = c("profiles", "progressive", "rownames"),
+  sep = "",
+  weights = rep(1, nrow(y))
+)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -30,7 +35,7 @@ a vector of length equal to the number of observations in \code{y}, representing
 
 The function extracts variables and their observed modalities from the population; it builds all possible profiles and assigns to them the corresponding frequency. If some modalities are not observed in the population, they will not be used to build the profiles. If one is interested in the set of all possible profiles from a given set of variables, function \code{\link{var2prof}} is to be used.
 
-Users can choose the label type to assign to profiles. When the names of modalities are too long, it is suggested to choose \code{progressive}.
+Users can choose the label type to assign to profiles. Accepetd types are: \code{profiles} the variabiles modalities, \code{progressive} a progressive numeration, \code{rownames} the rownames in the dataset.
 }
 \value{
 The function returns a S3 class object \code{wprof}, "weighted profiles", containing the \code{data.frame} named \code{profiles} and the frequency vector \code{freq}.

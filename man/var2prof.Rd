@@ -49,7 +49,7 @@ The function returns a S3 class object \code{wprof}, "weighted profiles", compri
 }
 \examples{
 # 2 variables with 2 modalities, frequencies detected from population
-pop <- matrix(sample(1:2, 200, replace=TRUE), 50, 2)
+pop <- matrix(sample(1:2, 100, replace=TRUE), 50, 2)
 var2prof(varlen=c(2, 2))
 
 # 2 variables:

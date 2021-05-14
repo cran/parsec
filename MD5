@@ -1,4 +1,4 @@
-3f90967d4d398ca5fcb3d922fa76f216 *DESCRIPTION
+aa155c10e261dd9e6a5ede5abe52f1ca *DESCRIPTION
 ae93645e59da8f90cc38b454e3afcffe *NAMESPACE
 db89f6f89d04e4fe454523692ae007f3 *R/AF.R
 430b735db8e718ac03c14eca30acfcf8 *R/AF.default.R
@@ -160,7 +160,7 @@ a28a2078969f48c098c18940f3897b97 *man/summary.parsec.Rd
 8792a292df4b12d0ed4ad237ce30fee8 *man/transitivity.Rd
 08c023687469ae068654e3f50bcbeb74 *man/upset.Rd
 66a7b9b8a3cb5b6071598d5cf492e11b *man/validate.partialorder.incidence.Rd
-1a95d180a7e8b13e0cfeaeb9462bdf35 *man/var2prof.Rd
+6c65fd518d40dbeacee121692d076e8c *man/var2prof.Rd
 640a214c3a53857856e5cc35c12daf31 *man/vertices.Rd
 79e36139f99c2e4cea6333a8ca543f91 *src/parsec.c
 17dd0893ac6eb6e9345386db2eb817d4 *src/parsec_init.c

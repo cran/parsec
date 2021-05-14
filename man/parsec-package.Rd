@@ -28,7 +28,8 @@ Maintainer: A, Arcagni <alberto.arcagni@unimib.it>
 %\references{
 %~~ Literature or other references for background information ~~
 %}
-\keyword{package, poset, partial order, multidimensional poverty, ordinal variables, counting approach, firs order dominance}
+%\keyword{package, poset, partial order, multidimensional poverty, ordinal variables, counting approach, first order dominance}
+\keyword{partial order}
 
 \examples{
 ###########################################

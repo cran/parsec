@@ -113,7 +113,7 @@ measures of gap.}
 \references{
 Bubley R., Dyer M. (1999), Faster random generation of linear extensions, Discrete Math., 201, 81-88.
 
-Fattore M., Arcagni A. (2013), \href{http://meetings.sis-statistica.org/index.php/sis2013/ALV/paper/view/2633}{Measuring multidimensional polarization with ordinal data}, SIS 2013 Statistical Conference, BES-M3.1 - The BES and the challenges of constructing composite indicators dealing with equity and sustainability
+Fattore M., Arcagni A. (2013), Measuring multidimensional polarization with ordinal data, SIS 2013 Statistical Conference, BES-M3.1 - The BES and the challenges of constructing composite indicators dealing with equity and sustainability
 }
 \examples{
 profiles <- var2prof(varlen = c(3, 2, 4))

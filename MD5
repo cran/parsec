@@ -1,4 +1,4 @@
-258a75f04e626b9821241f3f0ec4ba65 *DESCRIPTION
+3f90967d4d398ca5fcb3d922fa76f216 *DESCRIPTION
 ae93645e59da8f90cc38b454e3afcffe *NAMESPACE
 db89f6f89d04e4fe454523692ae007f3 *R/AF.R
 430b735db8e718ac03c14eca30acfcf8 *R/AF.default.R
@@ -68,7 +68,6 @@ b588da18bae632cb8ee105a920fa02c1 *R/minimal.cover.R
 403a0acd1a1cfed90473fc95da8c7b19 *R/mrg.R
 e87c9492b0a0b21800e0559fe13d9d50 *R/obsprof.R
 40ea07bed77f4ad70e2cfc043151e21f *R/obsprof.wprof.R
-513c4ad9bb0a7a12424a888057deb31f *R/parsec-internal.R
 9eeedd221fddaadc8b022a828d8be97b *R/parsec2igraph.R
 5f9e2725ff189b4ffe424168ce3af951 *R/parsec2igraph.cover.R
 0af28f7b3cf61a6bbbe8c5900f4134f2 *R/parsec2igraph.incidence.R
@@ -119,13 +118,13 @@ eeeb828fee2d25daa8710de71ef48057 *man/cover2incidence.Rd
 326574845a6afef5c41d364497182550 *man/downset.Rd
 462c64d555e59351b89df42731e069a3 *man/drawedges.Rd
 af8c44085d4b3089f388f974772c9d5d *man/equivalences.Rd
-3ad3f9c0dd574da52346dfe7a5923073 *man/evaluation.Rd
+8b12cbabe949018859c13a16ffc1db1e *man/evaluation.Rd
 d0d4f52c366d295da6c54a2cfc44ac37 *man/gen.downset.Rd
 e95be3425e18010fcf15c1810a735e08 *man/gen.upset.Rd
 9bdef01919521183ca73cd450dbd0a5d *man/getlambda.Rd
 b9284b30331ab8c7fcac47a454886b90 *man/getzeta.Rd
 9f2a7db278ec4f1e9441c0c005e2ce15 *man/heights.Rd
-0721f9217dc1ae00ab875e5ca90a1c1a *man/idn.Rd
+d231a20377bace7e963931f377716b2e *man/idn.Rd
 88a7b4b4c586d1b7a483119dce3dfda7 *man/incidence2cover.Rd
 f7e35b940dd73255488f13e6d7fee6de *man/incomp.Rd
 224bea5eab69192e0425bf2922ed5981 *man/is.downset.Rd
@@ -143,7 +142,7 @@ dabe30f4842c20d6cd01603af261d1ef *man/minimal.Rd
 387b593e2f4b5ba0405b526ec78de455 *man/mrg.Rd
 28976e7f666d6dd2da654773699f1346 *man/obsprof.Rd
 377a2a834bd2e2a8a4afa29d2e4ccd88 *man/parsec-internal.Rd
-b0b16634bd80bd51d46c3f773cad47a5 *man/parsec-package.Rd
+96965160d15e02a8d0de7ad2f35afc54 *man/parsec-package.Rd
 262cbd1aa04fc92218211da0cc199d51 *man/parsec2igraph.Rd
 3c7b87b07274af0f8c4b1a7b3cb261e5 *man/plot.average_ranks.Rd
 3ebfac841996b95ad3f96017ebc91382 *man/plot.cover.Rd

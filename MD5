@@ -1,4 +1,4 @@
-aa155c10e261dd9e6a5ede5abe52f1ca *DESCRIPTION
+433d6eae1540e23d9434ae052eb089b0 *DESCRIPTION
 ae93645e59da8f90cc38b454e3afcffe *NAMESPACE
 db89f6f89d04e4fe454523692ae007f3 *R/AF.R
 430b735db8e718ac03c14eca30acfcf8 *R/AF.default.R
@@ -85,7 +85,7 @@ dbf171f75c5f008f18a3ea7f22ecbdd9 *R/plot.rank_stability.R
 33bb9ceb557b8869098ed739d3a97760 *R/rank_stability.R
 15d927b7d0664011b8c4f69840c969bb *R/reflexivity.R
 6359f18355e23f364238f3970c5c5848 *R/rmProfiles.R
-83adbd0e495c695cb671c2084f2c8a06 *R/rmProfiles.wprof.R
+d0f49f10c7208c1a7659570797dc3bce *R/rmProfiles.wprof.R
 aee376b47e9adefb555a460d44babf9d *R/runC.R
 723a3f75ae4d528b058a2755fb6a5663 *R/runC.pre_parsec.R
 fc571fb07d648dc78034a748925879f9 *R/summary.cover.R

@@ -1,9 +1,9 @@
-433d6eae1540e23d9434ae052eb089b0 *DESCRIPTION
-ae93645e59da8f90cc38b454e3afcffe *NAMESPACE
+0457ac69ce814bb5701784dfe1ddb84a *DESCRIPTION
+4bbd27479f097c6634391f05bb6e9cd8 *NAMESPACE
 db89f6f89d04e4fe454523692ae007f3 *R/AF.R
 430b735db8e718ac03c14eca30acfcf8 *R/AF.default.R
 c37abf7274741c228287411b65db95d1 *R/AF.wprof.R
-315065beba319567c074b619c519f8d9 *R/AF2threshold.R
+ecd6695d6a4b6196cbd0d0ccba8e4193 *R/AF2threshold.R
 571c692b4ad31e9f45f4d3cb471c186b *R/FOD.R
 84d630f59082fd02deb3dade492b905a *R/FOD.wprof.R
 e93ec4a51f796804a03e5925d1ffe4ee *R/LE.R
@@ -142,7 +142,7 @@ dabe30f4842c20d6cd01603af261d1ef *man/minimal.Rd
 387b593e2f4b5ba0405b526ec78de455 *man/mrg.Rd
 28976e7f666d6dd2da654773699f1346 *man/obsprof.Rd
 377a2a834bd2e2a8a4afa29d2e4ccd88 *man/parsec-internal.Rd
-96965160d15e02a8d0de7ad2f35afc54 *man/parsec-package.Rd
+01d7a9479d1e5af1b978c1e9b5ea0589 *man/parsec-package.Rd
 262cbd1aa04fc92218211da0cc199d51 *man/parsec2igraph.Rd
 3c7b87b07274af0f8c4b1a7b3cb261e5 *man/plot.average_ranks.Rd
 3ebfac841996b95ad3f96017ebc91382 *man/plot.cover.Rd

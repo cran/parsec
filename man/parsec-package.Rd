@@ -10,15 +10,6 @@ The package implements tools for the analysis of partially ordered data, with a 
 
 Its main objective is to provide socio-economic scholars with an integrated set of elementary functions for multidimensional evaluation, based on ordinal information. In particular, it provides functions for data management and basic analysis of partial orders as well as other functions for the evaluation and application of both the poset-based approach and a more classic counting method.
 }
-\details{
-\tabular{ll}{
-Package: \tab parsec\cr
-Type: \tab Package\cr
-Version: \tab 1.2.0\cr
-Date: \tab 2018-04-01\cr
-License: \tab GPL (>= 2)\cr
-}
-}
 \author{
 A, Arcagni
 M, Fattore
